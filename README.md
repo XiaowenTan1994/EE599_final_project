@@ -13,6 +13,12 @@ Train a new model
 Use create_dataset.py to create your own training set.
 Execute ``python train.py --adadelta --trainRoot {train path} --valRoot {val path} '--displayInterval {Interval to be displayed} --expr_dir {output path} --cuda --random_sample``
 
+Website reference
+-----------------
+The code to upload image in HTML code is referenced from the blog[3], and HTML code uses image from the website[4]. The code to show image in Javascript code is referenced from the blog[3]
+
+The code to get the file is referenced from the website[5]. The code to download file is referenced from the website[6]. The code to run the python code is referenced from the website[7]. The method to return the result to the website is referenced from the website[8].
+
 Reference
 -----------------
 [1] https://github.com/meijieru/crnn.pytorch
