@@ -15,6 +15,6 @@ Execute ``python train.py --adadelta --trainRoot {train path} --valRoot {val pat
 
 Reference
 -----------------
-https://github.com/meijieru/crnn.pytorch
-
-https://github.com/bgshih/crnn
+[1] https://github.com/meijieru/crnn.pytorch
+[2] https://github.com/bgshih/crnn
+[3]
