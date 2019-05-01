@@ -7,8 +7,8 @@ import sys
 import models.crnn as crnn
 
 
-model_path = '/home/student/crnn.pytorch/data/v1.pth'
-img_path = './data/test/3_1.png'
+model_path = '../model.pth'
+img_path = '../data/demo.png'
 alphabet = '0123456789abcdefghijklmnopqrstuvwxyz'
 model = crnn.CRNN(32, 1, 37, 256)
 if torch.cuda.is_available():
