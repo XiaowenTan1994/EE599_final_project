@@ -19,7 +19,7 @@ The code to upload image in HTML code is referenced from the blog[3], and HTML c
 
 The code to get the file is referenced from the website[5]. The code to download file is referenced from the website[6]. The code to run the python code is referenced from the website[7]. The method to return the result to the website is referenced from the website[8].
 
-Also when run the website, please install portch and put the files in root-dictionary holder to the server root dictionary.
+Also when run the website, please install portch and put all python files in the server root dictionary.
 
 Reference
 -----------------
