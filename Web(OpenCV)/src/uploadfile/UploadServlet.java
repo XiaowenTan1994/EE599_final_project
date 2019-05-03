@@ -84,7 +84,10 @@ public class UploadServlet extends HttpServlet {
 	        PrintWriter writer=response.getWriter();
 	        Process proc;
 	        try {
-	        	proc = Runtime.getRuntime().exec("python demo-web.py input.png");
+			Runtime.getRuntime().exec("g++ `pkg-config opencv --cflags` image_preprocessing(opencv).cpp  -o image_preprocessing(opencv) `pkg-config opencv --libs` 
+");
+			Runtime.getRuntime().exec("./image_preprocessing(opencv) input(opencv).png");
+	        	proc = Runtime.getRuntime().exec("python demo-web.py input(opencv).png");
 	        	BufferedReader in = new BufferedReader(new InputStreamReader(proc.getInputStream()));
 	        	String output = null;
 				while ((output= in.readLine()) != null) {
