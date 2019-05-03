@@ -84,7 +84,7 @@ public class UploadServlet extends HttpServlet {
 	        PrintWriter writer=response.getWriter();
 	        Process proc;
 	        try {
-	        	proc = Runtime.getRuntime().exec("python demo.py input.png");
+	        	proc = Runtime.getRuntime().exec("python demo-web.py input.png");
 	        	BufferedReader in = new BufferedReader(new InputStreamReader(proc.getInputStream()));
 	        	String output = null;
 				while ((output= in.readLine()) != null) {
