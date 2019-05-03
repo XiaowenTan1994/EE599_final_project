@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Item Recommendation">
+  <meta name="author" content="Your Name">
+  <title>Item Recommendation Final</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="top-header">
+    <nav class="top-nav">
+      <a>EE599 Final Project Demo</a>
+    </nav>
+    <span id="welcome-msg"></span>
+    <i id="avatar" class="avatar fa fa-user fa-2x"></i>
+  </header>
+    <div class="container">
+      <div class="image">
+           <img src="" id="show" width="300">
+      </div>
+      <div class="text">
+      </div>
+      <form method="post" action="file:///home/student/Downloads/eclipse/http:/localhost:8080/TextRecognition/UploadServlet" enctype="multipart/form-data">
+      <div class="choosefile" align="center">
+	    <p><input type="file" name="uploadfile" id="file" class="filepath" onchange="showpic(this)" accept="image/*"></p> 
+	    <p><input type="submit" value="upload"> </p>
+      </div>
+      </form>
+    </div>
+  <footer>
+    <p class="title">Project Member</p>
+    <p class="member">Siqi Chen, Guangyu Chen,  Xiaowen Tan</p>
+  </footer>
+  <script src="script/main.js"></script>
+</body>
+</html>
