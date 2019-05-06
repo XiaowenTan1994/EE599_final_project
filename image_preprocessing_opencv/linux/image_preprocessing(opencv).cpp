@@ -12,6 +12,61 @@
 using namespace std;
 using namespace cv;
 
+
+
+//------------------------------------------------------------------
+class base {
+public:
+	base() :a(1), b(3) {};
+	base(int a1, int b1) :a(a1), b(b1) {};
+	virtual void ones()=0;
+protected:
+	int a;
+	int b;
+};
+
+class pnp {
+public:
+	pnp() :npc(0) {};
+	int npc;
+	friend class np;
+	friend void swap(pnp &a, pnp &b);
+private:
+	int dd;
+};
+
+class np: public base{
+public:
+	void ones() {
+		cout << "virtual" << endl;
+		npc.npc = 0;
+		cout << "composition" << endl;
+	}
+	virtual void a() {
+		cout << "virtual from np" << endl;
+	}
+	void print(pnp cp) {
+		cp.dd = 0;
+	}
+	pnp npc;
+};
+
+class child : public np {
+public:
+	void a() {
+		cout << "virtual from a" << endl;
+	}
+};
+
+void swap(pnp& a, pnp& b) {
+	pnp c;
+	c.dd = a.dd;
+	a.dd = b.dd;
+	b.dd = c.dd;
+}
+
+//-------------------------------------------------------------------------
+
 void imageRotate(Mat pic, Mat & rotated, double degree)
 {
 	//define the rotate center with a 2d data structure
@@ -323,7 +378,7 @@ int main(int argc, char *argv[])
 	//	uchar* p = aaa.ptr<uchar>(i);
 	//	for (int j = 0; j < aaa.cols; j++)
 	//	{
-	//		if (p[j] <= 100)  //ÊÇºÚÉ«ÏñËØ
+	//		if (p[j] <= 100)  //ï¿½Çºï¿½É«ï¿½ï¿½ï¿½ï¿½
 	//		{
 	//			count_temp[j]++;
 	//		}
