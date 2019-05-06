@@ -48,6 +48,7 @@ This program is able to rotate a tilted image to horizontal position (works to m
 
 
 To run the visual studio version, just change the input file name at line 287 then run it. 
+
 To run the linux version, compile it then run it with following command./{compiled file name} {image name}
 
 This program was expected work with the Web code. However, for unknow reasons, it somrtimes returns error message when called form the Web code.  We recommand to run this part of code with visual studio to check its function.
