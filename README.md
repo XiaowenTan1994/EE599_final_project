@@ -42,4 +42,12 @@ Reference
 
 Image Preprocessing with OpenCV
 -----------------
-There are two version of image
+There are two version of image-preprocessing, one is run in Visual Studio, another one is run in linux and can be called by the Web. To run the code, you should have set up your system with OpenCV4.0(Not sure if it is compatible with lower version of OpenCV. There are some const values that have different name in different version of OpenCV.)
+
+This program is able to rotate a tilted image to horizontal position (works to most of the bw/color images). For image with multiple lines, the program is able to segment the image to images with single lines(In order to have a good performance, test this part of program with bw images). For word segmentation, the program can only do vertical projections which represents positions of characters. As for the segmentation part, not working yet, therefore it is not included in the submitted program.
+
+
+To run the visual studio version, just change the input file name at line 287 then run it. 
+To run the linux version, compile it then run it with following command./{compiled file name} {image name}
+
+This program was expected work with the Web code. However, for unknow reasons, it somrtimes returns error message when called form the Web code.  We recommand to run this part of code with visual studio to check its function.
